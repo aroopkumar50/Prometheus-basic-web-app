@@ -18,8 +18,9 @@
                 <span class="error">{{ error }}</span>
             {% endfor %}
         </div>
-        <div>
-            {{ form.remember() }} {{ form.remember.label }}
+        <div style="display: flex; align-items: center;">
+            {{ form.remember() }}
+            <span style="margin-left: 10px;">{{ form.remember.label }}</span>
         </div>
         <div>
             {{ form.submit() }}
